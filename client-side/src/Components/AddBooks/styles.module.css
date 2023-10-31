@@ -1,0 +1,100 @@
+.wholeCont {
+    position: absolute;
+    width: 70vh;
+    height: 80vh;
+    left: 30%;
+    top: 15vh;
+    background-color: rgb(255, 240, 240);
+    border-radius: 25px;
+    border: 1px solid black;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inputCont {
+    position: relative;
+    width: 50vh;
+    min-height: 8vh;
+    border: 2px solid #535353;
+    margin: 1.5vh 0;
+    border-radius: 5px;
+    background-color: #c7edf0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.inputContClicked {
+    border: 2px solid #278a91;
+}
+
+.inputTitle {
+    position: absolute;
+    width: max-content;
+    padding: 0 1vh;
+    margin: 0;
+    color: #535353;
+    font-weight: 400;
+    background-color: #c7edf0;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: text;
+}
+
+.inputTitleClicked {
+    animation: titleSlideUp 0.5s forwards ease-in-out;
+}
+
+.inputBox {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    text-indent: 1vh;
+    color: #535353;
+    background-color: #c7edf0;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+}
+
+.loginButton {
+    width: 20vh;
+    height: 6vh;
+    border-radius: 12px;
+    background-color: #21292b;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginButton:active .loginText {
+    font-size: 0.8rem;
+}
+
+.loginText {
+    color: #ffffff;
+    font-size: 1rem;
+    user-select: none;
+    white-space: nowrap;
+}
+
+@keyframes titleSlideUp {
+    0% {
+        top: 2.5vh;
+        left: 1vh;
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    100% {
+        top: -2vh;
+        left: 1.5vh;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,172 @@
+.wholeCont {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20vh 5%;
+}
+
+.name {
+    color: rgb(110, 110, 110);
+    margin: 0 0 5vh 0;
+}
+
+.role {
+    margin: 0;
+    font-size: 1.5rem;
+    color: rgb(110, 110, 110);
+}
+
+.loginButton {
+    width: 20vh;
+    height: 6vh;
+    border-radius: 12px;
+    background-color: #21292b;
+    margin-right: 15vh;
+    margin-top: 5vh;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginButton:active .loginText {
+    font-size: 0.8rem;
+}
+
+.loginText {
+    color: #ffffff;
+    font-size: 1rem;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.booksCont {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 2vh;
+    padding: 15vh 0;
+}
+
+.eachBookCont {
+    position: relative;
+    width: 30vh;
+    height: 40vh;
+    border: 1px solid rgb(70, 70, 70);
+    background-image: url('../../../public/bookImg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    cursor: pointer;
+}
+
+.bookTitle1 {
+    position: absolute;
+    width: 100%;
+    min-height: 10vh;
+    max-height: 20vh;
+    background-color: rgba(0, 0, 0, 0.35);
+    bottom: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.completeInfoCont {
+    position: absolute;
+    width: 40vh;
+    height: 50vh;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 12px;
+    background-color: aliceblue;
+    top: 0;
+    left: 25vh;
+    padding: 1vh 2vh;
+    display: none;
+    z-index: 9;
+}
+
+.eachBookCont:hover .completeInfoCont {
+    display: block;
+}
+
+.completeInfoCont:hover .completeInfoCont {
+    display: block;
+}
+
+.bookTitle {
+    font-size: 1.5rem;
+    color: black;
+    margin: 0;
+    width: 100%;
+    height: 6vh;
+}
+
+.genreCont {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.genre {
+    width: 8vh;
+    font-size: 1rem;
+    color: black;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.eachGenreCont {
+    width: calc(100% - 10vh);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.eachGenre {
+    font-size: 1rem;
+    color: black;
+    margin: 0;
+}
+
+.info {
+    font-size: 1rem;
+    color: black;
+    margin: 0;
+}
+
+.operationsCont {
+    position: absolute;
+    width: 5vh;
+    height: 40%;
+    top: 0;
+    left: -5vh;
+    background-color: #c0c0c0;
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.eachIcon {
+    width: 5vh;
+    height: auto;
+}
+.eachIcon:active {
+    width: 4.5vh;
+    height: auto;
+}
+
+.eachBookCont:hover .operationsCont {
+    display: flex;
+}
+
+.operationsCont:hover .operationsCont {
+    display: flex;
+}

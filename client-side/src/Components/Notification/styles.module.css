@@ -1,0 +1,30 @@
+.wholeCont {
+    position: fixed;
+    width: 40vh;
+    min-height: 15vh;
+    background-color: aliceblue;
+    border: 1px solid rgb(146, 146, 146);
+    padding: 1vh 2vh;
+    top: 15vh;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideIn 1s forwards ease-in;
+    z-index: 10;
+}
+
+.msg {
+    font-size: 1rem;
+    margin: 0;
+    color: rgb(146, 146, 146);
+}
+
+@keyframes slideIn {
+    0% {
+        right: -40vh;
+    }
+    100% {
+        right: 1vh;
+    }
+}

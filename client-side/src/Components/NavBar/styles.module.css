@@ -1,0 +1,56 @@
+.wholeCont {
+    position: fixed;
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoCont {
+    height: 100%;
+    min-width: 10%;
+    max-width: 20%;
+}
+
+.logoImg {
+    height: 100%;
+    width: auto;
+}
+
+.menuCont {
+    min-width: 60%;
+    max-width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.loginPic {
+    height: 10vh;
+    width: auto;
+    margin-right: 10vh;
+}
+
+.loginButton {
+    width: 20vh;
+    height: 6vh;
+    border-radius: 12px;
+    background-color: #21292b;
+    margin-right: 15vh;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginButton:active .loginText {
+    font-size: 0.8rem;
+}
+
+.loginText {
+    color: #ffffff;
+    font-size: 1rem;
+    user-select: none;
+    white-space: nowrap;
+}
